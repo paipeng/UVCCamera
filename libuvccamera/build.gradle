@@ -34,7 +34,7 @@ android {
 	}
 
     defaultConfig {
-        minSdkVersion 14
+        minSdkVersion 21
 		targetSdkVersion versionTarget
     }
 
@@ -50,6 +50,11 @@ android {
 			jni.srcDirs = []
 		}
 	}
+
+	lintOptions {
+		abortOnError false
+	}
+
 }
 
 tasks.withType(JavaCompile) {
